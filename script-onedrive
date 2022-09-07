@@ -6,4 +6,4 @@ nautilus ~/OneDrive
 
 onedrive --synchronize
 
-notify-send 'OneDrive update complete' 'Javier Ramírez' -i ~/kr4k3n12301/Downloads/Icons/Onedrive.ico
+notify-send 'OneDrive update complete' 'Javier Ramírez' -i ~/Icons/Onedrive.ico
