@@ -4,7 +4,7 @@ SPTH="$(find ~/ | grep "Onedrive.ico")"
 
 notify-send 'Updating OneDrive, wait a second.' 'Javier Ramírez' -i $SPTH
 
-nautilus ~/OneDrive
+xdg-open ~/OneDrive
 
 onedrive --synchronize
 
