@@ -1,9 +1,11 @@
 #!/bin/bash
 
-notify-send 'Updating OneDrive, wait a second.' 'Javier Ramírez' -i Icons/Onedrive.ico 
+SPTH="$(find ~/ | grep "Onedrive.ico")"
+
+notify-send 'Updating OneDrive, wait a second.' 'Javier Ramírez' -i $SPTH
 
 nautilus ~/OneDrive
 
 onedrive --synchronize
 
-notify-send 'OneDrive update complete' 'Javier Ramírez' -i Icons/Onedrive.ico
+notify-send 'OneDrive update complete' 'Javier Ramírez' -i $SPTH
