@@ -6,6 +6,6 @@ notify-send 'Updating OneDrive, wait a second.' 'Javier Ramírez' -i $SPTH
 
 xdg-open ~/OneDrive
 
-onedrive --synchronize
+onedrive
 
 notify-send 'OneDrive update complete' 'Javier Ramírez' -i $SPTH
