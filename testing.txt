@@ -1,0 +1,34 @@
+[Función hash b345-fafb04/1/2023 15:19:250.03249105
+BTC$545,67](/explorer/transactions/btc/b345ad5261ad236b193cb9d4e9e9c1851e7d00ddf906095a831bc7e13db2fafb)[Función
+hash d440-1ce104/1/2023 15:19:250.00350490
+BTC$58,86](/explorer/transactions/btc/d4408db33fd23c39dd13aaa4739c86f9455d3ce7315d3107beb7db3e79781ce1)[Función
+hash bcec-30ba04/1/2023 15:19:251.60125741
+BTC$26.892,25](/explorer/transactions/btc/bcecbc25d557734aec180c4d17805456c6764fb07dddc68897dccab824bb30ba)[Función
+hash 20d8-fa9c04/1/2023 15:19:250.00002500
+BTC$0,42](/explorer/transactions/btc/20d8aa09a51db758aca808a1d5fddc77201f82ae1a3f7a79ddd1c68b54ddfa9c)[Función
+hash 2021-139704/1/2023 15:19:250.00002500
+BTC$0,42](/explorer/transactions/btc/20218c576676ea74c66ecbb5b1f18b46e3c41e033afeceb358791748f93c1397)[Función
+hash b620-957304/1/2023 15:19:250.00660647
+BTC$110,95](/explorer/transactions/btc/b620272a7b881a3e5107eb6f7758a1ae5bd62fb3d9cc0132c9af378c30c89573)[Función
+hash 031f-c66e04/1/2023 15:19:250.01355906
+BTC$227,72](/explorer/transactions/btc/031f4f10c38363388d55dc12dbf511662d065be83e3fb3174afd23e663b0c66e)[Función
+hash baae-f25304/1/2023 15:19:250.00083666
+BTC$14,05](/explorer/transactions/btc/baaecca73ad2011b908ff319a3fe69c461692346f92fb9065645e693751ef253)[Función
+hash 32fa-183504/1/2023 15:19:250.00966613
+BTC$162,34](/explorer/transactions/btc/32fa02abd78e91cd293d81984c00ce0d5192e4953c88024d24d4ad04460a1835)[Función
+hash 7f01-c0c204/1/2023 15:19:230.00616034
+BTC$103,46](/explorer/transactions/btc/7f01ce91cea7a8648639cac1595af1a963e417a59b845d59a07a8131c6a2c0c2)[Función
+hash 4acc-c45304/1/2023 15:19:234.14040684
+BTC$69.535,90](/explorer/transactions/btc/4acc923b52e14aa85802d1e60e9760fee00ab42b926812af0fa7d46f592bc453)[Función
+hash 9b8e-cc1504/1/2023 15:19:232.15970983
+BTC$36.271,16](/explorer/transactions/btc/9b8e6222f275bba85912e6882628e9066e6eaa4569b1aef6dc74ca44a7facc15)[Función
+hash cc89-3ee804/1/2023 15:19:220.00494448
+BTC$83,04](/explorer/transactions/btc/cc898da2e61835bf91ac596fddb19d920c6991c697a37bc9e8c2b4ed22f63ee8)[Función
+hash dcdd-a0e004/1/2023 15:19:221.93262974
+BTC$32.457,47](/explorer/transactions/btc/dcddd3e5ad47856bcd2ed100024dac6bf09b0ce8e869f4769df1dbf12f70a0e0)[Función
+hash 683c-3ba104/1/2023 15:19:220.42037941
+BTC$7060,05](/explorer/transactions/btc/683c2927eedf13f6db536bf0b03cbd5d87017187fffe847bede3bdfadf9c3ba1)[Función
+hash 5f16-da7c04/1/2023 15:19:220.09045336
+BTC$1519,12](/explorer/transactions/btc/5f160d93f0e2c52c0d69eb21bb9b6b9042627e89623673057700118ff14ada7c)[Función
+hash 61fe-c2fa04/1/2023 15:19:200.06266993
+BTC$1052,51](/explorer/transactions/btc/61fef67eb8ef668f0f234b1e1722a282b0a47ad617032ad97507d06635d7c2fa)
