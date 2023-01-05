@@ -1,2 +1,5 @@
 Para obtener el hash de BTC MEMPOOL para hacer un analizis es el siguiente comando:
-curl -s https://www.blockchain.com/es/explorer/mempool/btc | less -s | html2markdown | grep -Eo "btc/[a-zA-Z0-9./?=_%:-]*" | grep -Eo "/[a-zA-Z0-9./?=_%:-]*" | grep -Eo "[a-zA-Z0-9.?=_%:-]*"
+curl -s https://www.blockchain.com/es/explorer/mempool/btc | html2markdown | grep -Eo "btc/[a-zA-Z0-9./?=_%:-]*" | grep -Eo "/[a-zA-Z0-9./?=_%:-]*" | grep -Eo "[a-zA-Z0-9.?=_%:-]*"
+
+Para guardar la cantidad de dinero de cada HASH utilizamos el siguiente comando
+cat ut.tmp | grep "hash" -A 1 |grep -Eo "BTC[\$a-zA-Z0-9./?=_,%:-]*" | grep -Eo "[\$0-9,.]*"

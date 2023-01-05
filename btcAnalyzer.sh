@@ -38,9 +38,24 @@ inspect_transaction_url="https://www.blockchain.com/es/explorer/transactions/btc
 inspect_address_url="https://www.blockchain.com/es/explorer/addresses/btc/"
 
 function unconfirmedTransactions(){
-	echo "Prueba xd"
+	echo '' > ut.tmp
+
+	while [ "$(cat ut.tmp | wc -l)" == '1' ]; do
+	    curl -s "$unconfirmed_transactions" | html2markdown > ut.tmp
+	done
+
+	hashes=$(cat ut.tmp | grep -Eo "btc/[a-zA-Z0-9./?=_%:-]*" | grep -Eo "/[a-zA-Z0-9./?=_%:-]*" | grep -Eo "[a-zA-Z0-9.?=_%:-]*")
+
+	echo "Hash_Cantidad_Bitcoin_Tiempo" > ut.table
+
+	for hash in $hashes; do
+		echo "${hash}_$" >> ut.table 
+	done
+
 
 	tput cnorm
+
+
 }
 
 parametro_counter=0; while getopts e:h: parm ; do
