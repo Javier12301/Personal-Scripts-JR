@@ -45,11 +45,11 @@ function unconfirmedTransactions(){
 	done
 
 	hashes=$(cat ut.tmp | grep -Eo "btc/[a-zA-Z0-9./?=_%:-]*" | grep -Eo "/[a-zA-Z0-9./?=_%:-]*" | grep -Eo "[a-zA-Z0-9.?=_%:-]*")
-
+	echo $hashes
 	echo "Hash_Cantidad_Bitcoin_Tiempo" > ut.table
 
 	for hash in $hashes; do
-		echo "${hash}_$" >> ut.table 
+		echo " ${hash}_$(cat ut.tmp | grep "$hashes" | grep -Eo 'BTC[\$a-zA-Z0-9./?=_,%:-]*' | grep -Eo '[\$0-9,.]*' " >> ut.table
 	done
 
 
