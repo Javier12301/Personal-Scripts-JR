@@ -22,3 +22,5 @@ bitcoin=$(cat ut.tmp | grep "$hash" -B 1 | grep "hash *" | grep -Eo ":[0-9]*.*" 
 echo $bitcoin"BTC"
 
 ////////////////
+Para sacar el tiempo de la transición se utiliza el siguiente comando
+cat ut.tmp | grep "$hash" -B 1 | grep 'hash *' | grep -Eo '[[:space:]][0-9]*:[0-9][0-9]' | grep -Eo '[0-9]*:[0-9][0-9]'

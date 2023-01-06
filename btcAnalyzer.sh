@@ -127,6 +127,17 @@ function trimString(){
 unconfirmed_transactions="https://www.blockchain.com/es/explorer/mempool/btc"
 inspect_transaction_url="https://www.blockchain.com/es/explorer/transactions/btc/"
 inspect_address_url="https://www.blockchain.com/es/explorer/addresses/btc/"
+bitcoin=''
+
+function bitcoinHashing(){
+	v="$1" 
+
+        eliminar_fecha=$(cat ut.tmp | grep "$v" -B 1 | grep "hash *" | grep -Eo ":[0-9]*.*" | grep -o '[0-9].*' | grep -m3 -o '[0-9].*' | grep -Eo '[0-9][0-9]*:')
+
+        bash_original=$(cat ut.tmp | grep "$v" -B 1 | grep "hash *" | grep -Eo ":[0-9]*.*" | grep -o '[0-9].*' | grep -m3 -o '[0-9].*' | grep -v $eliminar_fecha)
+
+        bitcoin=$(cat ut.tmp | grep "$hash" -B 1 | grep "hash *" | grep -Eo ":[0-9]*.*" | grep -o '[0-9].*' | grep -m3 -o '[0-9].*' | grep -Eo "[$eliminar_fecha]*[0-9]*.[0-9]*" | grep -Eo ":[0-9]*.*" | grep -Eo "[0-9].*" | cut -c 3-13)
+}
 
 function unconfirmedTransactions(){
 	echo '' > ut.tmp
@@ -140,9 +151,11 @@ function unconfirmedTransactions(){
 	echo "Hash_Cantidad_Bitcoin_Tiempo" > ut.table
 
 	for hash in $hashes; do
-		echo " ${hash}_$(cat ut.tmp | grep "$hashes" | grep -Eo 'BTC[\$a-zA-Z0-9./?=_,%:-]*' | grep -Eo '[\$0-9,.]*' " >> ut.table
+		echo " ${hash}_$(cat ut.tmp | grep "$hash" | grep -Eo 'BTC[\$a-zA-Z0-9./?=_,%:-]*' | grep -Eo '[\$0-9,.]*')_$(bitcoinHashing "$hash" && echo "$bitcoin" 'BTC')_$(cat ut.tmp | grep "$hash" -B 1 | grep 'hash *' | grep -Eo '[[:space:]][0-9]*:[0-9][0-9]' | grep -Eo '[0-9]*:[0-9][0-9]') " >> ut.table
 	done
 
+	cat ut.table
+	sleep 100
 
 	tput cnorm
 
